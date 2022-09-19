@@ -1,0 +1,46 @@
+.slogan {
+    background-color: #C4C4C4;
+    text-align: center;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.slogan-title {
+    color: var(--accent-text-color);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 696px;
+    height: 120px;
+}
+
+
+.order {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align: center;
+    vertical-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;    
+    min-width: 216px;
+    cursor: pointer;
+    border: none
+}
