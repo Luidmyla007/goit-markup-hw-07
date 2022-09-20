@@ -26,17 +26,9 @@
     border: transparent;
     padding: 0;
     margin: 0;
+    &:hover .modal-icon{fill: var(--accent-color);}
+    &:focus .modal-icon{fill: var(--accent-color)}
 }
-
-
-.close-modal:hover .modal-icon {
-    fill: var(--accent-color);
-}
-
-.close-modal:focus .modal-icon {
-    fill: var(--accent-color)
-}
-
 
 
 .is-hidden {

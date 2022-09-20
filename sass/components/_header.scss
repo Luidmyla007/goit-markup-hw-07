@@ -47,16 +47,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{color: var(--accent-color); }
+    &:focus{color: var(--accent-color);}
 
 }
 
-.header-link:hover,
-.header-link:focus {
-    color: var(--accent-color);
-}
 
-.curent-port,
-.curent-st {
+.curent-port {
     display: block;
     color: var(--accent-color);
     letter-spacing: 0.02em;
@@ -65,7 +62,36 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+&::after{content: '';
+    width: 78px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    top: 32px;
+    right: 1px;
+}
+}
 
+.curent-st{
+    display: block;
+        color: var(--accent-color);
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        &::after{content: '';
+            width: 48px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+            display: block;
+            position: relative;
+            top: 32px;
+            right: 1px;}
 }
 
 
@@ -82,36 +108,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link-contact:hover,
-.header-link-contact:focus {
-    color: var(--accent-color);
-}
-
-.curent-st::after {
-    content: '';
-    width: 48px;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    display: block;
-    position: relative;
-    top: 32px;
-    right: 1px;
-
-}
-
-.curent-port::after {
-    content: '';
-    width: 78px;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    display: block;
-    position: relative;
-    top: 32px;
-    right: 1px;
+    &:hover{ color: var(--accent-color); }
+    &:focus{color: var(--accent-color); }
+    &:hover .header-icon-first{fill: #2196F3;}
+    &:focus .header-icon-first {fill: #2196F3;}
+    &:hover .header-icon-second {fill: #2196F3; }
+    &:focus .header-icon-second {fill: #2196F3;}
 }
 
 .site-nav {
@@ -173,12 +175,3 @@
 }
 
 
-.header-link-contact:hover .header-icon-first,
-.header-link-contact:focus .header-icon-first {
-    fill: #2196F3;
-}
-
-.header-link-contact:hover .header-icon-second,
-.header-link-contact:focus .header-icon-second {
-    fill: #2196F3;
-}

@@ -27,7 +27,20 @@
     border-radius: 4px;
     text-align: center;
     border: 1px solid var(--color1);
+transition-property: box-shadow, background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        background-color: var(--accent-color);
+        color: var(--accent-text-color);
+        box-shadow: 10px 10px 4px 10px rgba(0, 0, 0, 0.25);
+    }
 
+    &:focus{
+        background-color: var(--accent-color);
+        color: var(--accent-text-color);
+        box-shadow: 10px 10px 4px 10px rgba(0, 0, 0, 0.25);
+    }
 
 }
 
@@ -57,53 +70,6 @@
 }
 
 
-
-.choice-all,
-.choice-web,
-.choice-applications,
-.choice-design,
-.choice-marketing {
-    transition-property: box-shadow, background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.choice-all:hover,
-.choice-all:focus {
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
-    box-shadow: 10px 10px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.choice-web:hover,
-.choice-web:focus {
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
-    box-shadow: 10px 10px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.choice-applications:hover,
-.choice-applications:focus {
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
-    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
-}
-
-.choice-design:hover,
-.choice-design:focus {
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
-    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
-}
-
-.choice-marketing:hover,
-.choice-marketing:focus {
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
-    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
-}
-
 .card {
     display: block;
 }
@@ -114,16 +80,9 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+    &:focus{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
 }
-
-.picture:hover,
-.picture:focus {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-
-
 
 .picture-title {
 
