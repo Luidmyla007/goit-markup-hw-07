@@ -1,7 +1,11 @@
 footer {
     background-color: var(--accent-background-color);
-    padding-bottom: 64px;
+    
+}
 
+.footer {
+    padding-top: 60px;
+ padding-bottom: 60px;
 }
 
 .footer-flax {
@@ -161,5 +165,35 @@ footer .logo-second {
     justify-content: center;
     align-items: center;
 
+
+}
+
+.footer-form-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03;
+    color: var(--accent-color);
+    margin-left: 2px;
+
+}
+
+
+.button-send {
+
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--accent-text-color);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    */ font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03;
+    cursor: pointer;
 
 }

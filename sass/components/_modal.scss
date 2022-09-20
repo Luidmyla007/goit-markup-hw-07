@@ -1,0 +1,52 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+    margin: 0;
+
+}
+
+
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 52px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+
+.close-modal:hover .modal-icon {
+    fill: var(--accent-color);
+}
+
+.close-modal:focus .modal-icon {
+    fill: var(--accent-color)
+}
+
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.backdrop.is-hidden .modal {
+    min-height: 0;
+    transform: translate(-50%, -50%);
+}
